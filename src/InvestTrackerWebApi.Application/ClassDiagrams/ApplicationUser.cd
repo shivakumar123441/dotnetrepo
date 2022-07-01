@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="InvestTrackerWebApi.Domain.Identity.Entities.ApplicationUser.ApplicationUser">
+    <Position X="4.25" Y="0.5" Width="1.75" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Microsoft.AspNetCore.Identity.IdentityUser" Collapsed="true">
+    <Position X="1.25" Y="0.5" Width="2.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Microsoft.AspNetCore.Identity.IdentityUser&lt;TKey&gt;">
+    <Position X="1.25" Y="1.5" Width="2.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="InvestTrackerWebApi.Application.Identity.Users.UserDetailsDto">
+    <Position X="6.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACQEAAACAAAAAAEAAAQAAAAAAAAAAAAQQAAAAAAAg=</HashCode>
+      <FileName>Identity\Users\UserDetailsDto.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

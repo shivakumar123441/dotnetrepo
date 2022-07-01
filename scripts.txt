@@ -1,0 +1,9 @@
+dotnet ef migrations add Initial --context "AuditDbContext" -o Audit/Migrations -- "Server=localhost;Port=5432;Database=InvestTracker;User Id=postgres;Password=myPassw0rd"
+
+dotnet ef migrations add Initial --context "IdentityDbContext" -o Identity/Migrations -- "Server=localhost;Port=5432;Database=InvestTracker;User Id=postgres;Password=myPassw0rd"
+
+dotnet ef migrations add Initial --context "ApplicationDbContext" -o Application/Migrations -- "Server=localhost;Port=5432;Database=InvestTracker;User Id=postgres;Password=myPassw0rd"
+
+dotnet run -- "Server=localhost;Port=5432;Database=InvestTracker;User Id=postgres;Password=myPassw0rd"
+
+dotnet build -t:NSwag

@@ -1,0 +1,97 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{9C3379B9-7482-4BB4-BAFB-EA4A16EDDEEB}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		Directory.Build.props = Directory.Build.props
+		Directory.Build.targets = Directory.Build.targets
+		Dockerfile = Dockerfile
+		dotnet.ruleset = dotnet.ruleset
+		global.json = global.json
+		stylecop.json = stylecop.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{A5D3A800-FBC5-4511-913D-27B96A3D5EFE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{464372F0-4F99-4D94-871C-E8C63955CAED}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvestTrackerWebApi.Host", "src\InvestTrackerWebApi.Host\InvestTrackerWebApi.Host.csproj", "{655C4F4E-994E-40B7-B977-4C4DB6EF5972}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvestTrackerWebApi.Domain", "src\InvestTrackerWebApi.Domain\InvestTrackerWebApi.Domain.csproj", "{67839BFB-0E50-4965-8AE3-C0B5B9DBBC43}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvestTrackerWebApi.Application", "src\InvestTrackerWebApi.Application\InvestTrackerWebApi.Application.csproj", "{5EC601DF-D329-479B-81C9-D3B8611F5EAE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvestTrackerWebApi.Infrastructure", "src\InvestTrackerWebApi.Infrastructure\InvestTrackerWebApi.Infrastructure.csproj", "{D115F4C5-D366-4EF8-A54C-8FE2D7EE9AF3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvestTrackerWebApi.Persistence", "src\InvestTrackerWebApi.Persistence\InvestTrackerWebApi.Persistence.csproj", "{5476F9B6-C80C-4A54-9AC6-B44C3525BEAB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvestTrackerWebApi.Identity", "src\InvestTrackerWebApi.Identity\InvestTrackerWebApi.Identity.csproj", "{C1A1C400-6294-45FE-A667-68D4BE52769A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvestTrackerWebApi.DbMigrator", "src\InvestTrackerWebApi.DbMigrator\InvestTrackerWebApi.DbMigrator.csproj", "{C2B845B2-218A-41B7-802F-6374B7AF4A0C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InvestTrackerWebApi.HttpApi", "src\InvestTrackerWebApi.HttpApi\InvestTrackerWebApi.HttpApi.csproj", "{6112D129-1D5A-489D-9FF0-9388E00BC023}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvestTrackerWebApi.Auditing", "src\InvestTrackerWebApi.Auditing\InvestTrackerWebApi.Auditing.csproj", "{64766C20-1D4F-42E2-812C-0A878E50D60C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{655C4F4E-994E-40B7-B977-4C4DB6EF5972}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{655C4F4E-994E-40B7-B977-4C4DB6EF5972}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{655C4F4E-994E-40B7-B977-4C4DB6EF5972}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{655C4F4E-994E-40B7-B977-4C4DB6EF5972}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67839BFB-0E50-4965-8AE3-C0B5B9DBBC43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67839BFB-0E50-4965-8AE3-C0B5B9DBBC43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67839BFB-0E50-4965-8AE3-C0B5B9DBBC43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67839BFB-0E50-4965-8AE3-C0B5B9DBBC43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EC601DF-D329-479B-81C9-D3B8611F5EAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EC601DF-D329-479B-81C9-D3B8611F5EAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EC601DF-D329-479B-81C9-D3B8611F5EAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EC601DF-D329-479B-81C9-D3B8611F5EAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D115F4C5-D366-4EF8-A54C-8FE2D7EE9AF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D115F4C5-D366-4EF8-A54C-8FE2D7EE9AF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D115F4C5-D366-4EF8-A54C-8FE2D7EE9AF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D115F4C5-D366-4EF8-A54C-8FE2D7EE9AF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5476F9B6-C80C-4A54-9AC6-B44C3525BEAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5476F9B6-C80C-4A54-9AC6-B44C3525BEAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5476F9B6-C80C-4A54-9AC6-B44C3525BEAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5476F9B6-C80C-4A54-9AC6-B44C3525BEAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1A1C400-6294-45FE-A667-68D4BE52769A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1A1C400-6294-45FE-A667-68D4BE52769A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1A1C400-6294-45FE-A667-68D4BE52769A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1A1C400-6294-45FE-A667-68D4BE52769A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2B845B2-218A-41B7-802F-6374B7AF4A0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2B845B2-218A-41B7-802F-6374B7AF4A0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2B845B2-218A-41B7-802F-6374B7AF4A0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2B845B2-218A-41B7-802F-6374B7AF4A0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6112D129-1D5A-489D-9FF0-9388E00BC023}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6112D129-1D5A-489D-9FF0-9388E00BC023}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6112D129-1D5A-489D-9FF0-9388E00BC023}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6112D129-1D5A-489D-9FF0-9388E00BC023}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64766C20-1D4F-42E2-812C-0A878E50D60C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64766C20-1D4F-42E2-812C-0A878E50D60C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64766C20-1D4F-42E2-812C-0A878E50D60C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64766C20-1D4F-42E2-812C-0A878E50D60C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{67839BFB-0E50-4965-8AE3-C0B5B9DBBC43} = {A5D3A800-FBC5-4511-913D-27B96A3D5EFE}
+		{5EC601DF-D329-479B-81C9-D3B8611F5EAE} = {A5D3A800-FBC5-4511-913D-27B96A3D5EFE}
+		{D115F4C5-D366-4EF8-A54C-8FE2D7EE9AF3} = {464372F0-4F99-4D94-871C-E8C63955CAED}
+		{5476F9B6-C80C-4A54-9AC6-B44C3525BEAB} = {464372F0-4F99-4D94-871C-E8C63955CAED}
+		{C1A1C400-6294-45FE-A667-68D4BE52769A} = {464372F0-4F99-4D94-871C-E8C63955CAED}
+		{6112D129-1D5A-489D-9FF0-9388E00BC023} = {464372F0-4F99-4D94-871C-E8C63955CAED}
+		{64766C20-1D4F-42E2-812C-0A878E50D60C} = {464372F0-4F99-4D94-871C-E8C63955CAED}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4E1EFFB1-4E21-4711-B34D-557924FB3564}
+	EndGlobalSection
+EndGlobal

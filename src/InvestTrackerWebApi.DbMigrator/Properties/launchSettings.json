@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "InvestTrackerWebApi.DbMigrator": {
+      "commandName": "Project",
+      "commandLineArgs": "\"Server=localhost;Port=5432;Database=InvestTracker;User Id=postgres;Password=myPassw0rd\""
+    }
+  }
+}

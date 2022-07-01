@@ -1,0 +1,25 @@
+# NuGet restore
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
+WORKDIR /restore
+COPY *.sln .
+COPY src/InvestTrackerWebApi.Identity/*.csproj src/InvestTrackerWebApi.Identity/
+COPY src/InvestTrackerWebApi.Infrastructure/*.csproj src/InvestTrackerWebApi.Infrastructure/
+COPY src/InvestTrackerWebApi.Persistence/*.csproj src/InvestTrackerWebApi.Persistence/
+COPY src/InvestTrackerWebApi.Auditing/*.csproj src/InvestTrackerWebApi.Auditing/
+COPY src/InvestTrackerWebApi.Application/*.csproj src/InvestTrackerWebApi.Application/
+COPY src/InvestTrackerWebApi.Domain/*.csproj src/InvestTrackerWebApi.Domain/
+COPY src/InvestTrackerWebApi.Host/*.csproj src/InvestTrackerWebApi.Host/
+COPY src/InvestTrackerWebApi.HttpApi/*.csproj src/InvestTrackerWebApi.HttpApi/
+COPY src/InvestTrackerWebApi.DbMigrator/*.csproj src/InvestTrackerWebApi.DbMigrator/
+RUN dotnet restore
+COPY . .
+
+# publish
+FROM build AS publish
+WORKDIR /restore/src/InvestTrackerWebApi.Host
+RUN dotnet publish -c Release -o /output
+
+FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS runtime
+WORKDIR /app
+COPY --from=publish /output .
+CMD ASPNETCORE_URLS=http://*:$PORT dotnet InvestTrackerWebApi.Host.dll
